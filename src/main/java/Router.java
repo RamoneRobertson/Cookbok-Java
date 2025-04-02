@@ -37,8 +37,10 @@ public class Router {
     public void routeTask(int userChoice){
         switch (userChoice){
             case 1:
+                controller.listRecipes();
                 break;
             case 2:
+                controller.add();
                 break;
             case 3:
                 break;
