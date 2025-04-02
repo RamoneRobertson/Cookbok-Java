@@ -9,4 +9,8 @@ public class CookBook {
         recipes.put(recipe.getName(), recipe.getDescription());
     }
 
+    public void removeRecipe(String name){
+        recipes.remove(name);
+    }
+
 }

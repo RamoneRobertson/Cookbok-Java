@@ -7,15 +7,17 @@ public class View {
 
     public String askFor(String stuff){
         System.out.println(stuff.toUpperCase() + ":");
-        String userInput = scanner.next();
+        String userInput = scanner.nextLine();
         return userInput;
     }
 
     public void listAllRecipes(Map <String, String> recipes){
         System.out.println();
+        int count = 1;
 
         for(String recipe : recipes.keySet()){
             System.out.println(recipe + ": " + recipes.get(recipe));
+            count++;
         }
 
         System.out.println();

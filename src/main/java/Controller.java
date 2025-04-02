@@ -17,6 +17,12 @@ public class Controller {
         cookbook.addRecipe(recipe);
     }
 
+    public void delete(){
+        view.listAllRecipes(cookbook.recipes);
+        String userChoice = view.askFor("Recipe Name");
+        cookbook.removeRecipe(userChoice);
+    }
+
     public void listRecipes(){
         view.listAllRecipes(cookbook.recipes);
     }

@@ -6,8 +6,8 @@ public class Router {
     private Boolean running = true;
 
     public void run(){
-        System.out.println("welcome to the Cookbook");
-
+        System.out.println("Welcome to the Cookbook!");
+        System.out.println();
         while (running){
             displayTasks();
             int userChoice = scanner.nextInt();
@@ -32,6 +32,7 @@ public class Router {
                 "3. Remove a recipe\n" +
                 "4. Exit"
         );
+        System.out.println();
     }
 
     public void routeTask(int userChoice){
@@ -43,6 +44,7 @@ public class Router {
                 controller.add();
                 break;
             case 3:
+                controller.delete();
                 break;
             case 4:
                 stop();
